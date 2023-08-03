@@ -126,12 +126,12 @@ setprompt () {
 $PR_BLUE$PR_ULCORNER$PR_GREY($PR_BLUE%(!.%SROOT%s.%n)$PR_WHITE@$PR_LIGHT_YELLOW%m$PR_GREY-> $PR_GREY\
 $PR_GREEN%$PR_PWDLEN<...<%~%<<\
 $PR_GREY)`rvm_prompt_info || rbenv_prompt_info`$PR_GREY$PR_HBAR$PR_HBAR${(e)PR_FILLBAR}$PR_BLUE(\
-$PR_GREY:%l\
+$PR_GREY`git_prompt_info``git_prompt_status`\
 $PR_BLUE)$PR_URCORNER\
 
 $PR_BLUE$PR_LLCORNER$PR_GREY(\
 $PR_YELLOW%D{%H:%M:%S}\
-$PR_LIGHT_BLUE%{$reset_color%}`git_prompt_info``git_prompt_status`$PR_GREY)$PR_GREY$PR_HBAR\
+$PR_LIGHT_BLUE%{$reset_color%}$PR_GREY)$PR_GREY$PR_HBAR\
 $PR_HBAR\
 >$PR_NO_COLOUR '
 
